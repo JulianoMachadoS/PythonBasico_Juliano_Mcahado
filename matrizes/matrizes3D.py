@@ -56,7 +56,8 @@ def MostraGradeTela(matriz, titulo, mostraMarcacoes, qtDigitos):
                     # configura a quantidade de '.'s para a quantidade de digitos esperada
                     print(F" {'.' * qtDigitos} ", end="")
                 else:
-                    print(F" {' ' * qtDigitos} ", end="")
+                    # ero corrigido.
+                    print(F" {' ' * qtDigitos} ", end="") #codigo antigo ( print(F" {" " * qtDigitos} ", end="") )
             else:
                 print(f" {int(matriz[y][x]):>{qtDigitos}} ", end='')
         print()
